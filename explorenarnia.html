@@ -35,7 +35,12 @@
         }
         button{
             background-color: dodgerblue;
+            text-decoration-color: thistle;
             border-width: 0px;
+        }
+        button:hover {
+            background-color: aliceblue;
+            transition-duration: 0.3s
         }
         footer{
             background-color: rgb(115, 202, 197);
@@ -70,10 +75,10 @@
         <br\><p>You can search for the book you want to see below</p>
         <input type="text" placeholder="Search here...">
         <br\><p>~You can get the books online on different sites:</p>
-        <p><button style="background-color:sandybrown">On Amazon</button></p>
-        <p><button>On Ebay</button></p>
-        <p><button style="background-color:violet">On Bookfinder</button></p>
-        <p><button style="background-color: chartreuse;">On ebooks.com</button></p>
+        <a href="https://www.amazon.com/Chronicles-Narnia-Box-Set/dp/0060244887/ref=tmm_hrd_swatch_0">
+            <p><button>On Amazon</button></p></a>
+        <a href="https://www.ebay.com/p/102908354">
+            <p><button>On Ebay</button></p></a>
         <a href="#shopping sites"><p>... and more</p></a>
         <footer>
             <p align="right" font-size="medium">Author of The Chronicles of Narnia: C. S. Lewis</p>
