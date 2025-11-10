@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ExploreNarnia</title>
+        <title>ExploreNarnia: BookReview</title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">   
     <style type="text/css">
         header{
             background-color: darkslateblue;
@@ -50,23 +51,37 @@
             background-color: aliceblue;
             transition-duration: 0.3s
         }
-        cursor{
-            caret-color: coral;
-            outline: 0px;
-        }
         footer{
             background-color: rgb(115, 202, 197);
             height: 113px;
+        }
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            color: dodgerblue;
+        }
+        option{
+            background-color: aquamarine;
         }
         </style>
     </head>
     <body>
         <div>
            <header>
-            <a href="#home"><h1><strong>ExploreNarnia</strong></h1></a>
+            <a href="explorenarnia.html"><h1><strong>ExploreNarnia</strong></h1></a>
             <div>
-            <a href="#home"><button>Home</button></a> <a href="#about"><button>About</button></a> <a href="#books"><button>Books</button></a>
-            <a href="#shopping sites"><button>Shopping sites</button></a>
+            <a href="explorenarnia.html"><button>Home</button></a> <a href="#about"><button>About</button></a> <a href="#shopping sites"><button>Shopping sites</button></a>
+            <div>
+                <label for="books">Choose what book to review:</label>
+                <select id="books" name="book">
+                    <option value="The Magician's Nephew">The Magician's Nephew</option>
+                    <option value="The Lion, The Witch and The Wardrobe">The Lion, The Witch and The Wardrobe</option>
+                    <option value="The Horse and His Boy">The Horse and His Boy</option>
+                    <option value="Prince Caspian">Prince Caspian</a></option>
+                    <option value="The Voyage of The Dawn Trader">The Voyage of The Dawn Trader</option>
+                    <option value="The Silver Chair">The Silver Chair</option>
+                    <option value="The Last Battle">The Last Battle</option>
+                </select>
+            </div>
             </div>
            </header>
         </div>
@@ -76,13 +91,13 @@
         <p align="center"><strong>The Chronicles of Narnia</strong></p>
         <br\><p>~The books in the collection are as follows:-</p>
         <ul>
-            <li>The Magician's Nephew</li>
-            <li>The Lion, The Witch and The Wardrobe</li>
-            <li>The Horse and His Boy</li>
-            <li>Prince Caspian</li>
-            <li>The Voyage of The Dawn Trader</li>
-            <li>The Silver Chair</li>
-            <li>The Last Battle</li>
+            <li>~The Magician's Nephew</li>
+            <li>~The Lion, The Witch and The Wardrobe</li>
+            <li>~The Horse and His Boy</li>
+            <li>~Prince Caspian</li>
+            <li>~The Voyage of The Dawn Trader</li>
+            <li>~The Silver Chair</li>
+            <li>~The Last Battle</li>
         </ul>
         <br\><p>~You can search for the book you want to see below</p>
         <input type="text" placeholder="Search here...">
