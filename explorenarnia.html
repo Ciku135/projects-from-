@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>ExploreNarnia: BookReview</title>
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">   
@@ -9,6 +9,12 @@
             margin-top: 0px;
             margin-left: 0px;
             text-align: center;
+        }
+        header:hover{
+            background-color: darkmagenta;
+            padding-top: 3px;
+            padding-bottom: 0px;
+            transition-duration: 0.4s
         }
         body{
             background-color: cyan;
@@ -27,6 +33,16 @@
             color: wheat;
             transition-duration: 0.4s;
         }
+        h2{
+            color: darkblue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        h2:hover{
+            font-size: 25px;
+            color: blueviolet;
+            transition-duration: 0.4s;
+        }
         p{
             font-family: Arial, Helvetica, sans-serif;
             color: dodgerblue;
@@ -41,6 +57,7 @@
         a{
             text-decoration: none;
             color: dodgerblue;
+            text-shadow: 5px;
         }
         a:hover{
             color: aquamarine;
@@ -74,24 +91,44 @@
         footer{
             background-color: rgb(115, 202, 197);
             height: 113px;
+            font-family: system-ui, -apple-system,
+            BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+            'Open Sans', 'Helvetica Neue', sans-serif;
         }
         label{
             font-family: Arial, Helvetica, sans-serif;
             color: dodgerblue;
         }
         option{
-            background-color: aquamarine;
+            background-color: darkslateblue;
+            color: cyan;
         }
         :placeholder-shown{
-            background-color: sandybrown;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-radius: 2px;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: cornflowerblue;
             color: white;
+            caret-color: white;
             border-top: 0px;
             border-left: 0px;
             border-bottom: 0px;
             border-right: 0px;
         }
+
         input{
-            caret-color: darkorchid;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            background-color: cornflowerblue;
+            color: white;
         }
         </style>
     </head>
@@ -104,25 +141,25 @@
             <div>
                 <label for="books">Choose what book to review:</label>
                 <select id="books" name="book">
-                    <option value="The Magician's Nephew">The Magician's Nephew</option>
-                    <option value="The Lion, The Witch and The Wardrobe">The Lion, The Witch and The Wardrobe</option>
-                    <option value="The Horse and His Boy">The Horse and His Boy</option>
-                    <option value="Prince Caspian">Prince Caspian</a></option>
-                    <option value="The Voyage of The Dawn Trader">The Voyage of The Dawn Trader</option>
-                    <option value="The Silver Chair">The Silver Chair</option>
-                    <option value="The Last Battle">The Last Battle</option>
+                    <option value="book">The Magician's Nephew</option>
+                    <option value="book">The Lion, The Witch and The Wardrobe</option>
+                    <option value="book">The Horse and His Boy</option>
+                    <option value="book">Prince Caspian</a></option>
+                    <option value="book">The Voyage of The Dawn Trader</option>
+                    <option value="book">The Silver Chair</option>
+                    <option value="book">The Last Battle</option>
                 </select>
             </div>
             </div>
            </header>
         </div>
         <p>Welcome to ExploreNarnia!</p>
-        <p>The website where you can see the display of books and their summary</p>
-        <p>Here, you will see the display of one of the best book collections in history:</p>
-        <br/><p align="center"><strong>The Chronicles of Narnia</strong></p>
-        <br\><p>The books in the collection are as follows:-</p>
+        <p>The website where you can see and review the display of books and their summary</p>
+        <p>Here, you will see the display of one of the best fictional book collections in history:</p>
+        <h2 align="center"><strong><underlined>The Chronicles of Narnia</underlined></strong></h2>
+        <p>The books in the collection are as follows:-</p>
         <ul>
-            <br/><li>The Magician's Nephew</li>
+            <li>The Magician's Nephew</li>
             <br/><li>The Lion, The Witch and The Wardrobe</li>
             <br/><li>The Horse and His Boy</li>
             <br/><li>Prince Caspian</li>
@@ -139,9 +176,9 @@
             <p><button>On Ebay</button></p></a>
         <a href="#shopping sites"><p>... and more</p></a>
         <footer>
-            <p align="right" font-size="medium">Author of The Chronicles of Narnia: C. S. Lewis</p>
-            <p align="right" font-size="medium">Website Coder and Designer: Ciku135 from <a href="https://github.com/Ciku135" style="font-style:italic">Github</a></p>
-            <p align="right" font-size="medium">All right of the books mentioned go to the author C. S. Lewis</P>
+            <p align="right" font-size="medium"><strong>Author of The Chronicles of Narnia: C. S. Lewis</strong></p>
+            <p align="right" font-size="medium"><strong>Website Coder and Designer: Ciku135 from </strong><a href="https://github.com/Ciku135" style="font-style:italic">Github</a></p>
+            <p align="right" font-size="medium"><strong>All right of the books mentioned go to the author C. S. Lewis ©</strong></P>
         </footer>
     </body>
 </html>
