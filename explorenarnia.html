@@ -8,13 +8,18 @@
             background-color: darkslateblue;
             margin-top: 0px;
             margin-left: 0px;
+            margin-bottom: 0px;
             text-align: center;
         }
         header:hover{
             background-color: darkmagenta;
             padding-top: 3px;
-            padding-bottom: 0px;
+            padding-bottom: 8px;
             transition-duration: 0.4s
+        }
+        header:active{
+            background-image: url(Winter\ Forest.webp);
+            transition-duration: 0.4s;
         }
         body{
             background-color: cyan;
@@ -97,9 +102,10 @@
         }
         label{
             font-family: Arial, Helvetica, sans-serif;
-            color: dodgerblue;
+            color: cyan;
         }
         option{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: darkslateblue;
             color: cyan;
         }
@@ -117,7 +123,17 @@
             border-bottom: 0px;
             border-right: 0px;
         }
-
+        select{
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            padding-bottom: 2px;
+            background-color: dodgerblue;
+            border-radius: 2px;
+            color: cyan;
+            font-size: 13px;
+        }
         input{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 14px;
@@ -139,7 +155,7 @@
             <div>
             <a href="explorenarnia.html"><button>Home</button></a> <a href="#about"><button>About</button></a> <a href="#shopping sites"><button>Shopping sites</button></a>
             <div>
-                <label for="books">Choose what book to review:</label>
+                <label for="books"><strong>Choose what book to review:</strong></label>
                 <select id="books" name="book">
                     <option value="book">The Magician's Nephew</option>
                     <option value="book">The Lion, The Witch and The Wardrobe</option>
@@ -153,7 +169,7 @@
             </div>
            </header>
         </div>
-        <p>Welcome to ExploreNarnia!</p>
+        <p style="padding: top 2px;">Welcome to ExploreNarnia!</p>
         <p>The website where you can see and review the display of books and their summary</p>
         <p>Here, you will see the display of one of the best fictional book collections in history:</p>
         <h2 align="center"><strong><underlined>The Chronicles of Narnia</underlined></strong></h2>
@@ -172,9 +188,8 @@
         <br\><p>You can get the books online on different sites:</p>
         <a href="https://www.amazon.com/Chronicles-Narnia-Box-Set/dp/0060244887/ref=tmm_hrd_swatch_0">
             <p><button>On Amazon</button></p></a>
-        <a href="https://www.ebay.com/p/102908354">
-            <p><button>On Ebay</button></p></a>
-        <a href="#shopping sites"><p>... and more</p></a>
+        <a href="https://www.ebay.com/p/102908354"><p><button>On Ebay</button></p></a>
+        <p>... and more</p>
         <footer>
             <p align="right" font-size="medium"><strong>Author of The Chronicles of Narnia: C. S. Lewis</strong></p>
             <p align="right" font-size="medium"><strong>Website Coder and Designer: Ciku135 from </strong><a href="https://github.com/Ciku135" style="font-style:italic">Github</a></p>
