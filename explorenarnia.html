@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <title>ExploreNarnia: BookReview</title>
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">   
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <script src="explorenarnia.html"></script>
     <style type="text/css">
         header{
             background-color: darkslateblue;
@@ -104,8 +105,12 @@
         }
         option{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: darkslateblue;
-            color: cyan;
+            background-color: dodgerblue;
+            color: turquoise;
+        }
+        option:hover{
+            background-color: white;
+            color: turquoise;
         }
         :placeholder-shown{
             padding-top: 6px;
@@ -122,6 +127,7 @@
             border-right: 0px;
         }
         select{
+            padding-right: 13px;
             border-top: 0px;
             border-bottom: 0px;
             border-left: 0px;
@@ -130,7 +136,12 @@
             background-color: dodgerblue;
             border-radius: 2px;
             color: cyan;
-            font-size: 14.73px;
+            font-size: 15px;
+        }
+        select:hover{
+            color: white;
+            background-color: mediumblue;
+            transition-duration: 0.65s;
         }
         input{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -152,22 +163,18 @@
         <div>
            <header>
             <a href="explorenarnia.html"><h1><strong>ExploreNarnia</strong></h1></a>
-            <div>
-            <a href="explorenarnia.html"><button><strong>Home</strong></button></a> <a href="#about"><button><strong>About</strong></button></a> <a href="#shopping sites"><button><strong>Shopping sites</strong></button></a>
-            <div>
-                <label for="books"><strong>Choose what book to review:</strong></label>
+            <a href="#about"><button><strong>About</strong></button></a> <a href="#shopping sites"><button><strong>Shopping sites</strong></button></a>
+                <br/><label for="books"><strong>Choose what book to review:</strong></label>
                 <select id="books" name="book">
                     <option value="book">01 The Magician's Nephew</option>
                     <option value="book">02 The Lion, The Witch and The Wardrobe</option>
                     <option value="book">03 The Horse and His Boy</option>
                     <option value="book">04 Prince Caspian</option>
-                    <option value="book">05 The Voyage of The Dawn Trader/option>
+                    <option value="book">05 The Voyage of The Dawn Trader</option>
                     <option value="book">06 The Silver Chair</option>
                     <option value="book">07 The Last Battle</option>
                 </select>
-            </div>
-            </div>
-           </header>
+            </header>
         </div>
         <p style="padding: top 2px;">Welcome to ExploreNarnia!</p>
         <p>The website where you can see and review the display of books and their summary</p>
@@ -193,7 +200,7 @@
         <footer>
             <p align="right" font-size="medium"><strong>Author of The Chronicles of Narnia: C. S. Lewis</strong></p>
             <p align="right" font-size="medium"><strong>Website Coder and Designer: Ciku135 from </strong><a href="https://github.com/Ciku135" style="font-style:italic">Github</a></p>
-            <p align="right" font-size="medium"><strong>All right of the books mentioned go to the author C. S. Lewis ©</strong></P>
+            <p align="right" font-size="medium"><strong>All right of the books mentioned go to the author C. S. Lewis ©</strong></p>
         </footer>
     </body>
 </html>
