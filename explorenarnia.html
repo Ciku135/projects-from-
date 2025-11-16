@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
         <title>ExploreNarnia: BookReview</title>
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,26 @@
                     alert("Note that this action\nwill take you to a different webpage.\nPress OK to continue")
                 }
             //-->
+
+            let cursor = document.querySelector(".cursor")
+            function cursorControl(e){
+                let x= e.clientX;
+                let y= e.clientY;
+                cursor.style.top= '${y}px';
+                cursor.style.left= '${x}px';
+            }
+
+            document.addEventListener("mousemove", cursorControl);
+
+            let divs = document.querySelector("div:not(.cursor)");
+            divs.forEach((div) => {
+                div.addEventListener("mouseEnter", function () {
+                    cursor.classList.add("cursorGrow");
+                });
+                div.addEventListener("mouseleave", function() {
+                    cursor.classList.remove("cursorGrow");
+                });
+            });
         </script>
     <style type="text/css">
         header{
@@ -26,6 +46,25 @@
         body{
             background-color: cyan;
             margin: 0px;
+        }
+        *{
+            cursor: none;
+        }
+        .cursor{
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            background-image: url(snowball.png);
+            position: fixed;
+            pointer-events: none;
+            background-size: cover;
+            transition: scale 0.4s;
+        }
+        .cursorGrow{
+            scale: 8;
+        }
+        .The Magicians Nephew{
+            background-image: url(narniashield.png);
         }
         h1{
             font-family: Arial, Helvetica, sans-serif;
@@ -178,13 +217,16 @@
             <a href="#book"><button><strong>Books</strong></button></a> <a href="#about"><button><strong>About</strong></button></a> <a href="#shopping sites"><button><strong>Shopping sites</strong></button></a>
                 <br/><label for="books"><strong>Choose what book to review:</strong></label>
                 <select id="books" name="book">
-                    <option value="book">01 The Magician's Nephew</option>
-                    <option value="book">02 The Lion, The Witch and The Wardrobe</option>
-                    <option value="book">03 The Horse and His Boy</option>
-                    <option value="book">04 Prince Caspian</option>
-                    <option value="book">05 The Voyage of The Dawn Trader</option>
-                    <option value="book">06 The Silver Chair</option>
-                    <option value="book">07 The Last Battle</option>
+                    <nav>
+                        <div><option value="book">The Magician's Nephew</option></div>
+                        <div>><option value="book">The Lion, The Witch and The Wardrobe</option></div>
+                        <div><option value="book">The Horse and His Boy</option></div>
+                        <div><option value="book">Prince Caspian</option></div>
+                        <div><option value="book">The Voyage of The Dawn Trader</option></div>
+                        <div><option value="book">The Silver Chair</option></div>
+                        <div><option value="book">The Last Battle</option></div>
+                    </nav>
+                    <div class="cursor"></div>
                 </select>
             </header>
         </div>
