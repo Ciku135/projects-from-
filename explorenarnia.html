@@ -3,11 +3,18 @@
     <head>
         <title>ExploreNarnia: BookReview</title>
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <script src="explorenarnia.html"></script>
+        <script type="text/javascript">
+            <!--
+                function sayHello() {
+                    alert("Note that this action\nwill take you to a different webpage.\nPress OK to continue")
+                }
+            //-->
+        </script>
     <style type="text/css">
         header{
             background-color: darkslateblue;
-            margin: 0px;
+            padding-top: 0px;
+            padding-bottom: 3px;
             text-align: center;
         }
         header:hover{
@@ -48,7 +55,6 @@
             color: dodgerblue;
             font-size: larger;  
             padding-left: 7px;
-            padding-top: 4px;
         }
         li{
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -67,7 +73,7 @@
         }
         button{
             background-color: dodgerblue;
-            color: darkturquoise;
+            color: cyan;
             border-width: 0px;
             border-radius: 5px;
             font-family:system-ui, -apple-system,
@@ -77,8 +83,8 @@
             margin-bottom: 7px;
         }
         button:hover {
-            background-color:lightskyblue;
-            color: blue;
+            background-color:crimson;
+            color: plum;
             padding-left: 7px;
             border-radius: 3px;
             padding-right: 7px;
@@ -89,19 +95,20 @@
         button:active{
             background-color: white;
             color: black;
-            transition-duration: 0s;
         }
         footer{
             background-color: rgb(115, 202, 197);
-            height: 169px;
+            height: 158px;
             font-family: system-ui, -apple-system,
             BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
             'Open Sans', 'Helvetica Neue', sans-serif;
+            
         }
         label{
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             color: cyan;
-            padding-right: 5px;
+            padding-right: 8px;
+            padding-bottom: 8px;
         }
         option{
             background-color: dodgerblue;
@@ -148,6 +155,20 @@
             background-color: cornflowerblue;
             color: white;
         }
+        input[type="button"]{
+            border-radius: 3px;
+            color: lightcyan;
+        }
+        input[type="button"]:hover{
+            background-color: dodgerblue;
+            color: aquamarine;
+            caret-color: cyan;
+            transition-duration: 0.4s;
+        }
+        input[type="button"]:active{
+            background-color: white;
+            color: black;
+        }
         </style>
     </head>
     <body>
@@ -185,14 +206,16 @@
         <input type="book" placeholder="Search here...">
         <br\><p>You can get the books online on different sites:</p>
         <a href="https://www.amazon.com/Chronicles-Narnia-Box-Set/dp/0060244887/ref=tmm_hrd_swatch_0">
-            <p><button><strong>On Amazon</strong></button></p></a>
-        <a href="https://www.ebay.com/p/102908354"><p><button><strong>On Ebay</strong></button></p></a>
+            <input type="button" onclick="sayHello()" value="On Amazon"></a>
+        <p></p>
+        <a href="https://www.ebay.com/p/102908354">
+            <input type="button" onclick="sayHello()" value="On Ebay"></a>
         <p>... and more</p>
         <footer>
             <p align="right" font-size="medium"><strong>Author of The Chronicles of Narnia: C. S. Lewis</strong></p>
             <p align="right" font-size="medium"><strong>Website Coder and Designer: Ciku135 from </strong><a href="https://github.com/Ciku135" style="font-style:italic">Github</a></p>
             <p align="right" font-size="medium"><strong>All right of the books mentioned go to the author C. S. Lewis ©</strong></p>
-            <p align="center" font-size="medium"><strong>In ExploreNarnia, we display the fantastical, wondrous, fictional books of all time</strong></p>
+            <p align="right" font-size="medium"><strong>Photos are in the process...</strong></p>
         </footer>
     </body>
 </html>
