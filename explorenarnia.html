@@ -9,26 +9,6 @@
                     alert("Note that this action\nwill take you to a different webpage.\nPress OK to continue")
                 }
             //-->
-
-            let cursor = document.querySelector(".cursor")
-            function cursorControl(e){
-                let x= e.clientX;
-                let y= e.clientY;
-                cursor.style.top= '${y}px';
-                cursor.style.left= '${x}px';
-            }
-
-            document.addEventListener("mousemove", cursorControl);
-
-            let divs = document.querySelector("div:not(.cursor)");
-            divs.forEach((div) => {
-                div.addEventListener("mouseEnter", function () {
-                    cursor.classList.add("cursorGrow");
-                });
-                div.addEventListener("mouseleave", function() {
-                    cursor.classList.remove("cursorGrow");
-                });
-            });
         </script>
     <style type="text/css">
         header{
@@ -46,25 +26,6 @@
         body{
             background-color: cyan;
             margin: 0px;
-        }
-        *{
-            cursor: none;
-        }
-        .cursor{
-            width: 17px;
-            height: 17px;
-            border-radius: 50%;
-            background-image: url(snowball.png);
-            position: fixed;
-            pointer-events: none;
-            background-size: cover;
-            transition: scale 0.4s;
-        }
-        .cursorGrow{
-            scale: 8;
-        }
-        .The Magicians Nephew{
-            background-image: url(narniashield.png);
         }
         h1{
             font-family: Arial, Helvetica, sans-serif;
@@ -161,7 +122,6 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: cornflowerblue;
             color: white;
-            caret-color: white;
             border-top: 0px;
             border-left: 0px;
             border-bottom: 0px;
@@ -219,7 +179,7 @@
                 <select id="books" name="book">
                     <nav>
                         <div><option value="book">The Magician's Nephew</option></div>
-                        <div>><option value="book">The Lion, The Witch and The Wardrobe</option></div>
+                        <div><option value="book">The Lion, The Witch and The Wardrobe</option></div>
                         <div><option value="book">The Horse and His Boy</option></div>
                         <div><option value="book">Prince Caspian</option></div>
                         <div><option value="book">The Voyage of The Dawn Trader</option></div>
