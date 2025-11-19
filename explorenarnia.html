@@ -62,16 +62,25 @@
             font-size: larger;  
             padding-left: 7px;
         }
+        p:hover{
+            cursor: default;
+        }
         blockquote{
             font-family: Arial, Helvetica, sans-serif;
             color: dodgerblue;
             font-size: medium;
             padding-left: 7px;
         }
+        blockquote:hover{
+            cursor: default;
+        }
         li{
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color: dodgerblue;
             font-size: large;
+        }
+        li:hover{
+            cursor: default;
         }
         a{
             text-decoration: none;
@@ -85,6 +94,7 @@
         }
         a:active{
             cursor: progress;
+            color: black;
         }
         button{
             background-color: dodgerblue;
@@ -115,10 +125,15 @@
         }
         footer{
             background-color: rgb(115, 202, 197);
-            height: 285px;
+            height: 315px;
             font-family: system-ui, -apple-system,
             BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
             'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        footer:hover{
+            background-color: slateblue;
+            cursor: default;
+            transition-duration: 0.4s;
         }
         label{
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -148,6 +163,11 @@
         :placeholder-shown:hover{
             cursor: pointer;
         }
+        :placeholder-shown:active{
+            cursor: grab;
+            background-color: white;
+            color: black;
+        }
         select{
             border: 0px;
             padding-bottom: 2px;
@@ -159,7 +179,11 @@
         select:hover{
             color: white;
             background-color: mediumblue;
+            cursor: pointer;
             transition-duration: 0.65s;
+        }
+        select:active{
+            cursor: default;
         }
         input{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -191,6 +215,16 @@
             color: black;
             cursor: progress;
         }
+        time{
+            font-style: italic;
+            font-size: large;
+            text-decoration-style: none;
+        }
+        time:hover{
+            color: aquamarine;
+            cursor: default;
+            transition-duration: 0.4s;
+        }
         </style>
     </head>
     <body>
@@ -208,7 +242,6 @@
                         <div><option value="book">The Silver Chair</option></div>
                         <div><option value="book">The Last Battle</option></div>
                     </nav>
-                    <div class="cursor"></div>
                 </select>
             </header>
         <p style="padding: top 2px;">Welcome to ExploreNarnia!</p>
@@ -235,12 +268,14 @@
             <input type="button" onclick="sayHello()" value="On Ebay"></a>
         <p>... and more</p>
         <footer>
-            <p align="right" font-size="medium"><strong>Author of The Chronicles of Narnia: C. S. Lewis</strong></p>
-            <p align="right" font-size="medium"><strong>First published on <time datetime="1955">The year of ©1955</time></strong></p>
+            <p align="right" font-size="medium" style="padding-top: 11px;"><strong>Author of The Chronicles of Narnia: C. S. Lewis</strong></p>
+            <p align="right" font-size="medium"><strong>Book first published on the year of <time datetime="1955">©1955</time></strong></p>
             <p align="right" font-size="medium"><strong>Website Coder and Designer: Ciku135 from </strong>
-                <a href="https://github.com/Ciku135" style="font-style:italic">&#8594 Github &#8592</a></p>
-            <p align="right" font-size="medium"><strong>All right of the books mentioned go to the author C. S. Lewis ©</strong></p>
-            <p align="middle" font-size="large"><strong>&#9995;&#127996  &#9995;&#127996 &#9995;&#127996</strong></p>
+                <a href="https://github.com/Ciku135" style="font-style:italic">Github</a></p>
+            <p align="right" font-size="medium"><strong>All right of the books mentioned go to the author C. S. Lewis</strong></p>
+            <p align="middle" font-size="large" style="font-size: x-large;">
+                <strong>&#128151 &#128151 &#128151</strong></p>
+            <p></p>
             <p align="left" font-size="medium"><strong>Random Latin Poem:</strong></p>
             <blockquote text-align="right" font-size="medium"><strong><em>Sic vita est</em> (Such is life)</strong></blockquote>
         </footer>
