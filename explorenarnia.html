@@ -10,6 +10,13 @@
                     alert("Note that this action\nwill take you to a different webpage.\nPress OK to continue")
                 }
             //-->
+
+            function showTime() {
+                const timeNow = new Date().toLocaleTimeString();
+                document.getElementById('clock').textContent = timeNow;
+            }
+
+            setInterval(showTime, 1000);
         </script>
     <style type="text/css">
         default { cursor: default;}
@@ -170,7 +177,7 @@
         }
         select{
             border: 0px;
-            padding-bottom: 2px;
+            padding-bottom: 0px;
             background-color: dodgerblue;
             border-radius: 2px;
             color: cyan;
@@ -184,6 +191,24 @@
         }
         select:active{
             cursor: default;
+        }
+        span{
+            margin: 0px;
+            border: 0px;
+            border-radius: 3px;
+            padding-left: 2px;
+            padding-right: 2px;
+            background-color: darkmagenta;
+            color: dodgerblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        span:hover{
+            cursor: default;
+            background-color: darkslateblue;
+            color: aqua;
+            font-size: 22px;
+            transition-duration: 0.4s;
         }
         input{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -215,16 +240,6 @@
             color: black;
             cursor: progress;
         }
-        time{
-            font-style: italic;
-            font-size: large;
-            text-decoration-style: none;
-        }
-        time:hover{
-            color: aquamarine;
-            cursor: default;
-            transition-duration: 0.4s;
-        }
         </style>
     </head>
     <body>
@@ -243,6 +258,7 @@
                         <div><option value="book">The Last Battle</option></div>
                     </nav>
                 </select>
+                <br/><span id="clock"></span>
             </header>
         <p style="padding: top 2px;">Welcome to ExploreNarnia!</p>
         <p>The website where you can see and review the display of books and their summary</p>
