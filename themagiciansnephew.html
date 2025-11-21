@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ExploreNarnia: Shopping Sites</title>
+        <title>The Magician's Nephew</title>
         <link rel="icon" type="image/x-icon" href="narniashield.jpg">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript">
@@ -36,7 +36,7 @@
                 transition-duration: 0.4s;
             }
             body{
-                background-color: cyan;
+                background-color: dodgerblue;
                 margin: 0px;
             }
             h1{
@@ -68,14 +68,17 @@
             }
             p{
                 font-family: Arial, Helvetica, sans-serif;
-                color: dodgerblue;
+                color: cyan;
                 padding-left: 7px;
                 font-size: large;
+            }
+            p:hover{
+                cursor: default;
             }
             a{
                 text-decoration: none;
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                color: dodgerblue;
+                color: cyan;
                 text-shadow: 5px;
             }
             a:hover{
@@ -145,7 +148,7 @@
                 color: lightcyan;
             }
             input[type="button"]:hover{
-                background-color: dodgerblue;
+                background-color: blue;
                 color: chartreuse;
                 cursor: pointer;
                 transition-duration: 0.4s;
@@ -173,26 +176,37 @@
                 font-size: 22px;
                 transition-duration: 0.4s;
             }
+            img{
+                align-self: center;
+            }
         </style>
     </head>
     <body>
         <header>
-            <a href="explorenarnia.html"><h1><strong>ExploreNarnia</strong></h1></a>
-            <a href="books.html"><button><strong>Books</strong></button></a> <a href="about.html"><button><strong>About</strong></button></a> <a href="shoppingsites.html"><button><strong>Shopping sites</strong></button></a>
-            <br/><span id="clock"></span>
+             <a href="explorenarnia.html"><h1><strong>ExploreNarnia</strong></h1></a>
+                <a href="books.html"><button><strong>Books</strong></button></a> <a href="about.html"><button><strong>About</strong></button></a> <a href="#shopping sites"><button><strong>Shopping sites</strong></button></a>
+                <br/><span id="clock"></span>
         </header>
-        <h2><strong>Shopping Sites</strong></h2>
-        <p><strong>You can get the books(or the entire book set) from a number of shopping websites: </strong></p>
-        <a href="https://www.amazon.com/Chronicles-Narnia-Box-Set/dp/0060244887/ref=tmm_hrd_swatch_0">
+        <h1>Preview</h1>
+        <img src="themagiciansnephew.png" width="208.5px" height="320px"> <img src="themagiciansnephew-secondcover.png" width="208.5px" height="320px"> <img src="themagiciansnephew-thirdcover.png" width="208.5px" height="320px"> <img src="themagiciansnephew-fourthcover.png" width="208.5px" height="320px">
+        <p>Book 1: The Magician's Nephew</p>
+        <p>Summary: On a daring quest to save a life, two friends are hurled into another world,
+            where an evil sorceress seeks to enslave them. But then the lion Aslan's song weaves itself
+            into the fabric of a new land, a land that will be known as Narnia.
+            And in Narnia, all things are possible.
+        </p>
+        <br/><p>You can purchase the book on different shopping sites: </p>
+        <a href="https://www.amazon.com/Magicians-Nephew-C-S-Lewis/dp/0064471101">
             <input type="button" onclick="sayHello()" value="On Amazon"></a>
         <p></p>
-        <p></p>
-        <a href="https://www.ebay.com/p/102908354">
+        <a href="https://www.ebay.com/itm/371999032463?_skw=the+magicians+nephew+book&itmmeta=
+        01KAKW11VH2HDES2F816BNXVQ2&hash=item569cdec48f:g:exEAAOSwOMdZV002&itmprp=enc%3AA
+        QAKAAAA0IUNi59bckQcV2ImusJGAkHu0AcY6DAL3p5zwFsQOJp9Z32CEN%2F4soUw6OQgZv10k47FyU1
+        zXtVchZJNXKumj7FnFDodFZJ9njXJ3zmOolClTj4jdY5cDoXbxjXaB8ofcK0rH7tuZ%2F6uIj1iY34yT
+        Xr4yt9JjTpN96dYHGpGBr2%2BqjoMMJLKmf2TkAiY8ias%2FSKRcYK4%2BVFbfzd0CqhHWSmY04%2BFO
+        lMTmD0qugSHxLAwLbWlwC%2BxB3Upo2XrfLmS9KHjlfp5WsLDKkvY%2FYbekZk%3D%7Ctkp%3ABk9SR_KdhPzUZg">
             <input type="button" onclick="sayHello()" value="On Ebay"></a>
         <p></p>
-        <p></p>
-        <a href="https://www.etsy.com/hk-en/listing/1710410001/the-complete-set-of-chronicles-of-narnia">
-            <input type="button" onclick="sayHello()" value="On Etsy"></a>
         <p>... and more</p>
         <footer>
             <p align="right" font-size="medium" style="padding-top: 11px;"><strong>Author of The Chronicles of Narnia: C. S. Lewis</strong></p>
