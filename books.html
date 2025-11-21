@@ -3,6 +3,224 @@
     <head>
         <title>ExploreNarnia: Books</title>
         <link rel="icon" type="image/x-icon" href="narniashield.jpg">
-        <h1>production in progress...</h1>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            <!--
+                function sayHello() {
+                    alert("Note that this action\nwill take you to a different webpage.\nPress OK to continue")
+                }
+            //-->
+
+            function showTime() {
+                const timeNow = new Date().toLocaleTimeString();
+                document.getElementById('clock').textContent = timeNow;
+            }
+
+            setInterval(showTime, 1000);
+        </script>
+        <style type="text/css">
+            default { cursor: default;}
+            pointer { cursor: pointer;}
+            progress { cursor: progress;}
+            header{
+                background-color: darkslateblue;
+                padding-top: 0px;
+                padding-bottom: 3px;
+                margin: 0px;
+                text-align: center;
+            }
+            header:hover{
+                background-color: darkmagenta;
+                padding-top: 3px;
+                padding-bottom: 8px;
+                transition-duration: 0.4s;
+            }
+            body{
+                background-color: cyan;
+                margin: 0px;
+            }
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+                color: aqua;
+                text-align: center;
+                margin-top: 0px;
+                margin-bottom: 3px;
+            }
+            h1:hover{
+                margin-bottom: 7px;
+                font-size: 35px;
+                color: wheat;
+                transition-duration: 0.4s;
+            }
+            h1:active{
+                color: white;
+            }
+            h2{
+                color: darkblue;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            h2:hover{
+                font-size: 25px;
+                color: blueviolet;
+                cursor: default;
+                transition-duration: 0.4s;
+            }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                color: dodgerblue;
+                padding-left: 7px;
+                font-size: large;
+            }
+            a{
+                text-decoration: none;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: dodgerblue;
+                text-shadow: 5px;
+            }
+            a:hover{
+                color: aquamarine;
+                transition-duration: 0.65s;
+                cursor: pointer;
+            }
+            a:active{
+                color: black;
+                cursor: progress;
+            }
+            li{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: dodgerblue;
+                font-size: large;
+            }
+            li:hover{
+                cursor: default;
+                color: blue;
+                transition-duration: 0.4s;
+            }
+            footer{
+                background-color: rgb(115, 202, 197);
+                height: 315px;
+                font-family: system-ui, -apple-system,
+                BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            footer:hover{
+                background-color: slateblue;
+                cursor: default;
+                transition-duration: 0.4s;
+            }
+            button{
+                background-color: dodgerblue;
+                color: cyan;
+                border-width: 0px;
+                border-radius: 5px;
+                font-family:system-ui, -apple-system,
+                BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: medium;
+                margin-bottom: 7px;
+            }
+            button:hover {
+                background-color:crimson;
+                color: plum;
+                padding-left: 7px;
+                border-radius: 3px;
+                padding-right: 7px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                transition-duration: 0.45s;
+                cursor: pointer;
+            }
+            button:active{
+                background-color: white;
+                color: black;
+                cursor: progress;
+            }
+            input{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 14px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                border-top: 0px;
+                border-bottom: 0px;
+                border-left: 0px;
+                border-right: 0px;
+                padding-left: 3px;
+                margin-left: 5px;
+                background-color: cornflowerblue;
+                color: white;
+            }
+            input[type="button"]{
+                border-radius: 3px;
+                color: lightcyan;
+            }
+            input[type="button"]:hover{
+                background-color: dodgerblue;
+                color: chartreuse;
+                cursor: pointer;
+                transition-duration: 0.4s;
+            }
+            input[type="button"]:active{
+                background-color: white;
+                color: black;
+                cursor: progress;
+            }
+            span{
+                margin: 0px;
+                border: 0px;
+                border-radius: 3px;
+                padding-left: 2px;
+                padding-right: 2px;
+                background-color: darkmagenta;
+                color: dodgerblue;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+            }
+            span:hover{
+                cursor: default;
+                background-color: darkslateblue;
+                color: aqua;
+                font-size: 22px;
+                transition-duration: 0.4s;
+            }
+        </style>
     </head>
+    <body>
+        <header>
+            <a href="explorenarnia.html"><h1><strong>ExploreNarnia</strong></h1></a>
+            <a href="books.html"><button><strong>Books</strong></button></a> <a href="about.html"><button><strong>About</strong></button></a> <a href="shoppingsites.html"><button><strong>Shopping sites</strong></button></a>
+            <br/><span id="clock"></span>
+        </header>
+        <h2 align="center"><strong>Books</strong></h2>
+        <p><strong>The books in 'The Chronicles of Narnia' collection are as follows:</strong></p>
+        <ul>
+            <li>The Magician's Nephew</li>
+            <br/><li>The Lion, The Witch and The Wardrobe</li>
+            <br/><li>The Horse and His Boy</li>
+            <br/><li>Prince Caspian</li>
+            <br/><li>The Voyage of The Dawn Trader</li>
+            <br/><li>The Silver Chair</li>
+            <br/><li>The Last Battle</li>
+        </ul>
+        <p>You can purchase the books on various shopping sites:</p>
+        <a href="https://www.amazon.com/Chronicles-Narnia-Box-Set/dp/0060244887/ref=tmm_hrd_swatch_0">
+            <input type="button" onclick="sayHello()" value="On Amazon"></a>
+        <p></p>
+        <a href="https://www.ebay.com/p/102908354">
+            <input type="button" onclick="sayHello()" value="On Ebay"></a>
+        <p></p>
+        <a href="https://www.etsy.com/hk-en/listing/1710410001/the-complete-set-of-chronicles-of-narnia">
+            <input type="button" onclick="sayHello()" value="On Etsy"></a>
+        <p>... and more</p>
+        <footer>
+            <p align="right" font-size="medium" style="padding-top: 11px;"><strong>Author of The Chronicles of Narnia: C. S. Lewis</strong></p>
+            <p align="right" font-size="medium"><strong>Book first published on the year of ©1955</strong></p>
+            <p align="right" font-size="medium"><strong>Website Coder and Designer: Ciku135 from </strong>
+                <a href="https://github.com/Ciku135" style="font-style:italic">Github</a></p>
+            <p align="right" font-size="medium"><strong>All right of the books mentioned go to the author C. S. Lewis</strong></p>
+            <p align="middle" font-size="large" style="font-size: x-large;">
+                <strong>&#128151 &#128151 &#128151</strong></p>
+            <p></p>
+        </footer>
+    </body>
 </html>

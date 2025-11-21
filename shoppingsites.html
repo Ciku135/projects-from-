@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ExploreNarnia: About</title>
+        <title>ExploreNarnia: Shopping Sites</title>
         <link rel="icon" type="image/x-icon" href="narniashield.jpg">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript">
@@ -21,7 +21,7 @@
         <style type="text/css">
             default { cursor: default;}
             pointer { cursor: pointer;}
-            progress{ cursor: progress;}
+            progress { cursor: progress;}
             header{
                 background-color: darkslateblue;
                 padding-top: 0px;
@@ -126,12 +126,26 @@
                 color: black;
                 cursor: progress;
             }
+            input{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 14px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                border-top: 0px;
+                border-bottom: 0px;
+                border-left: 0px;
+                border-right: 0px;
+                padding-left: 3px;
+                margin-left: 5px;
+                background-color: cornflowerblue;
+                color: white;
+            }
             input[type="button"]{
                 border-radius: 3px;
                 color: lightcyan;
             }
             input[type="button"]:hover{
-                background-color: cyan;
+                background-color: dodgerblue;
                 color: chartreuse;
                 cursor: pointer;
                 transition-duration: 0.4s;
@@ -167,9 +181,18 @@
             <a href="books.html"><button><strong>Books</strong></button></a> <a href="about.html"><button><strong>About</strong></button></a> <a href="shoppingsites.html"><button><strong>Shopping sites</strong></button></a>
             <br/><span id="clock"></span>
         </header>
-        <h2 align="center"><strong>About</strong></h2>
-        <p>This website is a project made for Moonshot by Ciku135 from <a href="https://github.com/Ciku135" style="font-style:italic">Github</a></strong></p>
-        <p>This is not intended to be an actual website, but as a project</p>
+        <p><strong>You can get the books(or the entire book set) from a number of shopping websites: </strong></p>
+        <a href="https://www.amazon.com/Chronicles-Narnia-Box-Set/dp/0060244887/ref=tmm_hrd_swatch_0">
+            <input type="button" onclick="sayHello()" value="On Amazon"></a>
+        <p></p>
+        <p></p>
+        <a href="https://www.ebay.com/p/102908354">
+            <input type="button" onclick="sayHello()" value="On Ebay"></a>
+        <p></p>
+        <p></p>
+        <a href="https://www.etsy.com/hk-en/listing/1710410001/the-complete-set-of-chronicles-of-narnia">
+            <input type="button" onclick="sayHello()" value="On Etsy"></a>
+        <p>... and more</p>
         <footer>
             <p align="right" font-size="medium" style="padding-top: 11px;"><strong>Author of The Chronicles of Narnia: C. S. Lewis</strong></p>
             <p align="right" font-size="medium"><strong>Book first published on the year of ©1955</strong></p>
